@@ -22,3 +22,27 @@ elif x>1000:
     print(ok3)
 else:
     print("Please enter a valid input")
+    
+'''
+2. Assume that a person bought a cylinder shaped container full of milk. He took a small cone shape of a container and pour milk from the cylinder container. 
+a) Get the cylinder and cone measurements from user
+b) Find the total volume of both the containers in liters. (use formula)
+c) Find the remaining milk after pouring. 
+d) check the cylinder measurements are greater than the cone measurements
+'''
+
+rCy=int(input())
+hCy=int(input())
+rCo=int(input())
+hCo=int(input())
+volCy=3.14*rCy**2*hCy
+volCo=(1/3)*3.14*rCo**2*hCo
+volume=volCy+volCo
+print(volume)
+remVolume=volCy-volCo
+print(remVolume)
+if rCy and hCy > rCo and hCo:
+    print("True")
+else:
+    print("False")
+
